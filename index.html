@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header-container"> 
+        <h1 id="header-text"> TO-DO LİST </h1>
+        <input type="text" id="header-input" style="display: none;">
+    </header>
+    <form>
+        <div class="search">
+            <button class="removeAll" type="button">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+            <input type="text" class="todo-input" placeholder="Add...">
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-circle"></i>
+            </button>
+            
+        </div>
+        
+        <div class="select">
+
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+    
+
+    <div class="alert-wrapper">
+        <div class="alert-success">
+            <div>Adding succesfull.</div>
+        </div>
+        <div class="alert-warning">
+            <div>Input field cannot be empty!</div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
